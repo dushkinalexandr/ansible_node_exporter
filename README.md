@@ -5,14 +5,18 @@ Install node_exporter
 - Download/install/configure/start node_exporter
 - Add firewall rule
 
-Playbook: main.yml
 
 Run playbook for host:
-ansible-playbook -i hosts -l fedora35 main.yml
+```
+ansible-playbook -i hosts playbook.yml
+```
 
 Run automaticaly:
+```
 bash ./run_ansible.sh
+```
 
 Check:
+```
 curl http://fedora35:9100/metrics | less
-
+```
