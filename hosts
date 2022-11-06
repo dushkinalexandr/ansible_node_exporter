@@ -1,0 +1,6 @@
+[node_exporter]
+fedora35 ansible_host=192.168.88.245
+
+[vars]
+ansible_user=ku
+ansible_ssh_private_key_file=/home/ku/.ssh/id_rsa
