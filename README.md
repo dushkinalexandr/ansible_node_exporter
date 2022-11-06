@@ -9,3 +9,6 @@ Playbook: main.yml
 
 Run playbook for host:
 ansible-playbook -i hosts -l fedora35 main.yml
+
+Check:
+curl http://fedora35:9100/metrics | less
