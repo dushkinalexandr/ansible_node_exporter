@@ -12,7 +12,7 @@ ansible-playbook -i hosts playbook.yml
 ```
 
 Run automaticaly:
-```
+```sh
 bash ./run_ansible.sh
 ```
 
