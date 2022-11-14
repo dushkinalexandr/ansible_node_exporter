@@ -45,4 +45,8 @@
     port: 9100/tcp
     permanent: yes
     state: enabled
+  # when: ansible_facts.services["firewalld.service"] is defined and ansible_facts.services["firewalld.service"].state == "running"
+  # when: services_state.ansible_facts.services["firewalld.service"] is defined and services_state.ansible_facts.services["firewalld.service"].state == "running"
+  # when: services_state.ansible_facts.services["firewalld.service"] is defined and services_state.ansible_facts.services["firewalld.service"].state == "running"
+  # ansible.builtin.service_facts["firewalld.service"] is defined and 
   notify: reload service firewalld
